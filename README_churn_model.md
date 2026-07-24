@@ -9,6 +9,11 @@ a family-owned retail store.
 This project explores the following question using transaction-level retail data:
 **Which customers are unlikely to return** within a 6-month window? (churn prediction)
 
+**Approach:** Built customer-level features (recency, frequency, monetary value,
+category diversity, order interval variability, order value trend) from a Jan 2024–Dec 2025
+feature window, and defined churn as no purchase in the following 6-month outcome window
+(Jan–Jun 2026). Compared Logistic Regression and Random Forest classifiers.
+
 ## Data
 
 Data consists of ~2 years of transaction-level order data (line-item granularity) 
